@@ -1,0 +1,38 @@
+# NOTICE
+
+**Northstar UI** is created by **@dream120526-create** and **@appledream120526-cloud**.
+
+- https://github.com/dream120526-create/northstar-ui
+- https://github.com/appledream120526-cloud/northstar-ui
+
+Licensed under the **Northstar UI License 1.0 (Attribution–NonCommercial)**. See `LICENSE`.
+
+## Third-party methodology references
+
+`references/agent-ui-skills.md` compares methodology with the projects below. **No source code, design assets, illustrations, icons, or brand material were copied.**
+
+- `anthropics/skills` — Agent Skills structure
+- `nextlevelbuilder/ui-ux-pro-max-skill` — design-intelligence retrieval
+- `superdesigndev/superdesign` — design iteration workflow
+- `21st-dev/magic-mcp` — component-level generation
+- `vercel-labs/agent-skills` — skill organization
+- `VoltAgent/awesome-design-md` — `DESIGN.md` concept (concept introduced by Google Stitch)
+- `bergside/awesome-design-skills` — `SKILL.md + DESIGN.md` layout
+- `plugin87/ux-ui-agent-skills` — executable acceptance gates
+- `dickwu/apple-design-skill` — review report structure
+- `oil-oil/oil-ui` — design workflow
+- `uxuiprinciples/agent-skills` — review role separation
+- `heydamir/unslop` — **CC BY 4.0**, by Damir Sokolovsky (@heydamir). This project references only the public "audit → direction → passes" method and description; it does not copy the skill text, images, or example assets. If you reuse unslop's actual text or assets, comply with CC BY 4.0 and keep its attribution and repository link: https://github.com/heydamir/unslop
+
+## Trademarks
+
+Product names, brand names, and company names mentioned in this repository are trademarks of their respective owners. They are used for identification and reference only; no affiliation or endorsement is implied.
+
+## Redistribution
+
+If you redistribute this work or a derivative:
+
+1. Keep `LICENSE` and this `NOTICE`.
+2. Credit both authors, or link to one of the original repositories.
+3. Do not sell or charge for access to the work.
+4. Verify the current license and path of any third-party repository you reference.
