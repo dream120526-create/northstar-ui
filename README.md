@@ -1,14 +1,16 @@
-# Northstar UI
+# Quiet Axis
 
 **A portable design skill for any AI coding agent.** It turns "make it look good" into a sequence an agent can execute and verify: classify content → structure the page → build hierarchy → use motion to explain state change.
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Español](README.es.md)
 
+> **Created by [@dream120526-create](https://github.com/dream120526-create) and [@appledream120526-cloud](https://github.com/appledream120526-cloud).** Two co-authors, one project. If you found this elsewhere, the original repos are [dream120526-create/quiet-axis](https://github.com/dream120526-create/quiet-axis) and [appledream120526-cloud/quiet-axis](https://github.com/appledream120526-cloud/quiet-axis).
+
 ---
 
 ## Why this exists
 
-Most agent-generated UI fails in the same three ways: content is not classified, pages have no regions, and every element has the same visual weight. Northstar UI is a Markdown skill that gives an agent a small set of hard rules, a design contract, and evidence-based gates—without locking it to a framework or a vendor.
+Most agent-generated UI fails in the same three ways: content is not classified, pages have no regions, and every element has the same visual weight. Quiet Axis is a Markdown skill that gives an agent a small set of hard rules, a design contract, and evidence-based gates—without locking it to a framework or a vendor.
 
 It is deliberately **small enough to keep in context** and **specific enough to change output**.
 
@@ -40,33 +42,33 @@ Highlights:
 Copy the folder into your agent's skills directory, or point the agent at `SKILL.md`.
 
 ```bash
-git clone https://github.com/dream120526-create/northstar-ui.git
+git clone https://github.com/dream120526-create/quiet-axis.git
 ```
 
 Common locations:
 
 | Agent | Path |
 | --- | --- |
-| Claude Code | `~/.claude/skills/northstar-ui/` or `<project>/.claude/skills/northstar-ui/` |
-| Codex | `~/.agents/skills/northstar-ui/` or `<project>/.agents/skills/northstar-ui/` |
-| Gemini CLI / Antigravity | `~/.gemini/config/skills/northstar-ui/` |
-| Cursor | `<project>/.cursor/skills/northstar-ui/` or add a pointer in `.cursor/rules` |
-| Windsurf | `<project>/.windsurf/skills/northstar-ui/` |
-| Any other agent | Put the folder anywhere and add one line to `AGENTS.md`: "For UI work, read `northstar-ui/SKILL.md` first." |
+| Claude Code | `~/.claude/skills/quiet-axis/` or `<project>/.claude/skills/quiet-axis/` |
+| Codex | `~/.agents/skills/quiet-axis/` or `<project>/.agents/skills/quiet-axis/` |
+| Gemini CLI / Antigravity | `~/.gemini/config/skills/quiet-axis/` |
+| Cursor | `<project>/.cursor/skills/quiet-axis/` or add a pointer in `.cursor/rules` |
+| Windsurf | `<project>/.windsurf/skills/quiet-axis/` |
+| Any other agent | Put the folder anywhere and add one line to `AGENTS.md`: "For UI work, read `quiet-axis/SKILL.md` first." |
 
 No runtime, no MCP server, no build step.
 
 ## Use it
 
 ```text
-Read northstar-ui/SKILL.md. Build the billing settings page.
+Read quiet-axis/SKILL.md. Build the billing settings page.
 Start with a DESIGN.md draft, then follow the seven steps. Do not skip classification.
 ```
 
 For a small edit:
 
 ```text
-Use northstar-ui. Change the primary button color; check token contrast (P0 9) only.
+Use quiet-axis. Change the primary button color; check token contrast (P0 9) only.
 ```
 
 The skill defines change tiers, so an agent does not run a full redesign for a copy edit.
@@ -82,7 +84,7 @@ The skill defines change tiers, so an agent does not run a full redesign for a c
 ## Repository structure
 
 ```text
-northstar-ui/
+quiet-axis/
 ├── SKILL.md
 ├── DESIGN.md
 ├── CHEATSHEET.md
@@ -108,7 +110,7 @@ northstar-ui/
 
 ## License and attribution
 
-**Northstar UI License 1.0 (Attribution–NonCommercial).** You may copy, modify, and build on it. You must credit both authors (or link to an original repository), and you may not sell it or charge for access. See [LICENSE](LICENSE) for the full terms.
+**Quiet Axis License 1.0 (Attribution–NonCommercial).** You may copy, modify, and build on it. You must credit both authors (or link to an original repository), and you may not sell it or charge for access. See [LICENSE](LICENSE) for the full terms.
 
 Created by [@dream120526-create](https://github.com/dream120526-create) and [@appledream120526-cloud](https://github.com/appledream120526-cloud).
 

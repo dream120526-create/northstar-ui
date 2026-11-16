@@ -1,14 +1,16 @@
-# Northstar UI
+# Quiet Axis
 
 **给任何 AI 编程 Agent 用的可移植设计技能。** 它把"做得好看"拆成 Agent 能执行、能验收的顺序：分类内容 → 划分页面 → 建立层级 → 用动效解释状态变化。
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Español](README.es.md)
 
+> **作者：[@dream120526-create](https://github.com/dream120526-create) 与 [@appledream120526-cloud](https://github.com/appledream120526-cloud)（共同作者）。** 若在其他地方看到本项目，原始仓库为 [dream120526-create/quiet-axis](https://github.com/dream120526-create/quiet-axis) 与 [appledream120526-cloud/quiet-axis](https://github.com/appledream120526-cloud/quiet-axis)。
+
 ---
 
 ## 为什么做这个
 
-Agent 生成的界面通常死在三处：内容没分类、页面没分区、所有元素一样重。Northstar UI 是一份 Markdown 技能，给 Agent 少量硬规则、一份设计契约和一套看证据的验收门槛，同时不绑定框架，也不绑定某个厂商。
+Agent 生成的界面通常死在三处：内容没分类、页面没分区、所有元素一样重。Quiet Axis 是一份 Markdown 技能，给 Agent 少量硬规则、一份设计契约和一套看证据的验收门槛，同时不绑定框架，也不绑定某个厂商。
 
 它刻意做到**小到能常驻上下文**，又**具体到能改变输出**。
 
@@ -40,33 +42,33 @@ Agent 生成的界面通常死在三处：内容没分类、页面没分区、�
 把整个目录放进 Agent 的技能目录，或直接让 Agent 读 `SKILL.md`。
 
 ```bash
-git clone https://github.com/dream120526-create/northstar-ui.git
+git clone https://github.com/dream120526-create/quiet-axis.git
 ```
 
 常见位置：
 
 | Agent | 路径 |
 | --- | --- |
-| Claude Code | `~/.claude/skills/northstar-ui/` 或 `<项目>/.claude/skills/northstar-ui/` |
-| Codex | `~/.agents/skills/northstar-ui/` 或 `<项目>/.agents/skills/northstar-ui/` |
-| Gemini CLI / Antigravity | `~/.gemini/config/skills/northstar-ui/` |
-| Cursor | `<项目>/.cursor/skills/northstar-ui/`，或在 `.cursor/rules` 里加一行指针 |
-| Windsurf | `<项目>/.windsurf/skills/northstar-ui/` |
-| 其他 Agent | 目录放哪都行，在 `AGENTS.md` 加一句："做 UI 前先读 `northstar-ui/SKILL.md`。" |
+| Claude Code | `~/.claude/skills/quiet-axis/` 或 `<项目>/.claude/skills/quiet-axis/` |
+| Codex | `~/.agents/skills/quiet-axis/` 或 `<项目>/.agents/skills/quiet-axis/` |
+| Gemini CLI / Antigravity | `~/.gemini/config/skills/quiet-axis/` |
+| Cursor | `<项目>/.cursor/skills/quiet-axis/`，或在 `.cursor/rules` 里加一行指针 |
+| Windsurf | `<项目>/.windsurf/skills/quiet-axis/` |
+| 其他 Agent | 目录放哪都行，在 `AGENTS.md` 加一句："做 UI 前先读 `quiet-axis/SKILL.md`。" |
 
 没有运行时、没有 MCP、没有构建步骤。
 
 ## 怎么用
 
 ```text
-读 northstar-ui/SKILL.md，做一个账单设置页。
+读 quiet-axis/SKILL.md，做一个账单设置页。
 先写 DESIGN.md 草案，再按七步执行，不许跳过分类。
 ```
 
 小改动：
 
 ```text
-用 northstar-ui。把主按钮颜色改掉，只检查令牌对比度（P0 9）。
+用 quiet-axis。把主按钮颜色改掉，只检查令牌对比度（P0 9）。
 ```
 
 技能里定义了改动分级，Agent 不会为了改一句文案重做整站。
@@ -82,7 +84,7 @@ git clone https://github.com/dream120526-create/northstar-ui.git
 ## 仓库结构
 
 ```text
-northstar-ui/
+quiet-axis/
 ├── SKILL.md
 ├── DESIGN.md
 ├── CHEATSHEET.md
@@ -108,7 +110,7 @@ northstar-ui/
 
 ## 许可证与署名
 
-**Northstar UI License 1.0（署名—非商用）。** 可以复制、修改、二创；必须标注两位作者（或给出原仓库链接），不能售卖或收费提供。完整条款见 [LICENSE](LICENSE)。
+**Quiet Axis License 1.0（署名—非商用）。** 可以复制、修改、二创；必须标注两位作者（或给出原仓库链接），不能售卖或收费提供。完整条款见 [LICENSE](LICENSE)。
 
 作者：[dream120526-create](https://github.com/dream120526-create) 与 [appledream120526-cloud](https://github.com/appledream120526-cloud)。
 

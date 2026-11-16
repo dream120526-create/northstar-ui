@@ -1,6 +1,6 @@
 # AGENTS.md
 
-This repository is a portable, agent-agnostic UI design skill. It contains no runtime, no MCP server, and no framework dependency.
+This repository is a portable, agent-agnostic UI design skill by **@dream120526-create** and **@appledream120526-cloud** (co-authors). It contains no runtime, no MCP server, and no framework dependency.
 
 ## For any coding agent
 
@@ -21,4 +21,4 @@ Add this repository to context and start with `SKILL.md`. The files are plain Ma
 
 ## License
 
-Northstar UI License 1.0 (Attribution–NonCommercial). See `LICENSE`; attribution and third-party notices are in `NOTICE`.
+Quiet Axis License 1.0 (Attribution–NonCommercial). See `LICENSE`; attribution and third-party notices are in `NOTICE`.

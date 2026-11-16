@@ -1,9 +1,11 @@
 ---
-name: northstar-ui
+name: quiet-axis
 description: Design and build interfaces that are logical, calm, and polished across Web (HTML/CSS/JS), iOS (SwiftUI/UIKit), Android (Compose/XML), and desktop shells (IPA/APK/EXE). Use when creating or reviewing pages, organizing content and navigation, defining page regions and hierarchy, designing forms and states, implementing motion and micro-interactions (easing, duration, hold-to-confirm, like burst, slide-to-confirm, fly-to-cart, theme reveal, copy feedback, scroll and hover effects), or handling dark mode, accessibility, localization, and platform conventions. Core order: classify content, structure the page, establish hierarchy, then use motion to explain state change.
 ---
 
-# Northstar UI: logic before pixels
+# Quiet Axis: logic before pixels
+
+> Authors: **@dream120526-create** and **@appledream120526-cloud** (co-authors). Original repositories: https://github.com/dream120526-create/quiet-axis · https://github.com/appledream120526-cloud/quiet-axis
 
 > Ugly UI is rarely a color problem. It is unclassified content, unpartitioned pages, and missing hierarchy.
 > Four moves, in order: **classify → structure → hierarchy → motion**. Good looks are a by-product of the third move; motion only explains state change.
@@ -316,4 +318,4 @@ Review report format, severity levels, and the evidence table: `topics/reference
 | [`topics/reference.md`](topics/reference.md) | 48 anti-patterns, token contrast, type/color/icon/copy, accessibility, review format |
 | [`references/agent-ui-skills.md`](references/agent-ui-skills.md) | Methodology comparison of 14 agent UI skills |
 
-License: **Northstar UI License 1.0 (Attribution–NonCommercial)** — see [`LICENSE`](LICENSE). Third-party references and CC BY 4.0 attribution: [`NOTICE`](NOTICE).
+License: **Quiet Axis License 1.0 (Attribution–NonCommercial)** — see [`LICENSE`](LICENSE). Third-party references and CC BY 4.0 attribution: [`NOTICE`](NOTICE).

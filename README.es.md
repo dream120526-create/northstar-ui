@@ -1,14 +1,16 @@
-# Northstar UI
+# Quiet Axis
 
 **Una skill de diseño portátil para cualquier agente de programación con IA.** Convierte "haz que se vea bien" en una secuencia que el agente puede ejecutar y verificar: clasificar contenido → estructurar la página → construir jerarquía → usar movimiento para explicar cambios de estado.
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Español](README.es.md)
 
+> **Creado por [@dream120526-create](https://github.com/dream120526-create) y [@appledream120526-cloud](https://github.com/appledream120526-cloud) (coautores).** Si lo encuentras en otro sitio, los repositorios originales son [dream120526-create/quiet-axis](https://github.com/dream120526-create/quiet-axis) y [appledream120526-cloud/quiet-axis](https://github.com/appledream120526-cloud/quiet-axis).
+
 ---
 
 ## Por qué existe
 
-La UI generada por agentes falla casi siempre en los mismos tres puntos: el contenido no está clasificado, la página no tiene regiones y todos los elementos pesan lo mismo. Northstar UI es una skill en Markdown que entrega pocas reglas duras, un contrato de diseño y puertas de aceptación basadas en evidencia, sin atarse a un framework ni a un proveedor.
+La UI generada por agentes falla casi siempre en los mismos tres puntos: el contenido no está clasificado, la página no tiene regiones y todos los elementos pesan lo mismo. Quiet Axis es una skill en Markdown que entrega pocas reglas duras, un contrato de diseño y puertas de aceptación basadas en evidencia, sin atarse a un framework ni a un proveedor.
 
 Es deliberadamente **pequeña para vivir en contexto** y **concreta para cambiar la salida**.
 
@@ -40,33 +42,33 @@ Aspectos clave:
 Copia la carpeta en el directorio de skills de tu agente, o indícale `SKILL.md`.
 
 ```bash
-git clone https://github.com/dream120526-create/northstar-ui.git
+git clone https://github.com/dream120526-create/quiet-axis.git
 ```
 
 Ubicaciones habituales:
 
 | Agente | Ruta |
 | --- | --- |
-| Claude Code | `~/.claude/skills/northstar-ui/` o `<proyecto>/.claude/skills/northstar-ui/` |
-| Codex | `~/.agents/skills/northstar-ui/` o `<proyecto>/.agents/skills/northstar-ui/` |
-| Gemini CLI / Antigravity | `~/.gemini/config/skills/northstar-ui/` |
-| Cursor | `<proyecto>/.cursor/skills/northstar-ui/` o un puntero en `.cursor/rules` |
-| Windsurf | `<proyecto>/.windsurf/skills/northstar-ui/` |
-| Otro agente | Colócala donde quieras y añade a `AGENTS.md`: "Para UI, lee primero `northstar-ui/SKILL.md`." |
+| Claude Code | `~/.claude/skills/quiet-axis/` o `<proyecto>/.claude/skills/quiet-axis/` |
+| Codex | `~/.agents/skills/quiet-axis/` o `<proyecto>/.agents/skills/quiet-axis/` |
+| Gemini CLI / Antigravity | `~/.gemini/config/skills/quiet-axis/` |
+| Cursor | `<proyecto>/.cursor/skills/quiet-axis/` o un puntero en `.cursor/rules` |
+| Windsurf | `<proyecto>/.windsurf/skills/quiet-axis/` |
+| Otro agente | Colócala donde quieras y añade a `AGENTS.md`: "Para UI, lee primero `quiet-axis/SKILL.md`." |
 
 Sin runtime, sin servidor MCP, sin build.
 
 ## Uso
 
 ```text
-Lee northstar-ui/SKILL.md. Crea la página de ajustes de facturación.
+Lee quiet-axis/SKILL.md. Crea la página de ajustes de facturación.
 Empieza con un borrador de DESIGN.md y sigue los siete pasos. No omitas la clasificación.
 ```
 
 Para un cambio pequeño:
 
 ```text
-Usa northstar-ui. Cambia solo el color del botón principal; revisa únicamente el contraste de tokens (P0 9).
+Usa quiet-axis. Cambia solo el color del botón principal; revisa únicamente el contraste de tokens (P0 9).
 ```
 
 La skill define niveles de cambio para que un agente no rediseñe todo por editar un texto.
@@ -82,7 +84,7 @@ La skill define niveles de cambio para que un agente no rediseñe todo por edita
 ## Estructura del repositorio
 
 ```text
-northstar-ui/
+quiet-axis/
 ├── SKILL.md
 ├── DESIGN.md
 ├── CHEATSHEET.md
@@ -98,7 +100,7 @@ northstar-ui/
 
 ## Licencia y atribución
 
-**Northstar UI License 1.0 (Atribución–NoComercial).** Puedes copiar, modificar y crear derivados. Debes acreditar a ambos autores (o enlazar a un repositorio original) y no puedes venderlo ni cobrar por acceso. Términos completos en [LICENSE](LICENSE).
+**Quiet Axis License 1.0 (Atribución–NoComercial).** Puedes copiar, modificar y crear derivados. Debes acreditar a ambos autores (o enlazar a un repositorio original) y no puedes venderlo ni cobrar por acceso. Términos completos en [LICENSE](LICENSE).
 
 Creado por [@dream120526-create](https://github.com/dream120526-create) y [@appledream120526-cloud](https://github.com/appledream120526-cloud).
 

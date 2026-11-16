@@ -1,14 +1,16 @@
-# Northstar UI
+# Quiet Axis
 
 **あらゆる AI コーディングエージェントのための、持ち運べるデザインスキル。** 「いい感じにして」を、エージェントが実行し検証できる順序に変えます：コンテンツを分類 → ページを構造化 → 階層を作る → モーションで状態変化を説明する。
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Español](README.es.md)
 
+> **作者：[@dream120526-create](https://github.com/dream120526-create) と [@appledream120526-cloud](https://github.com/appledream120526-cloud)（共同作者）。** 別の場所で見つけた場合、原本は [dream120526-create/quiet-axis](https://github.com/dream120526-create/quiet-axis) と [appledream120526-cloud/quiet-axis](https://github.com/appledream120526-cloud/quiet-axis) です。
+
 ---
 
 ## なぜ作ったか
 
-エージェントが生成する UI は、ほぼ同じ三か所で失敗します。コンテンツが分類されていない、ページに領域がない、すべての要素が同じ重さに見える。Northstar UI は Markdown のスキルとして、少数の硬いルール、デザイン契約、証拠ベースの合格条件を渡します。フレームワークにもベンダーにも縛られません。
+エージェントが生成する UI は、ほぼ同じ三か所で失敗します。コンテンツが分類されていない、ページに領域がない、すべての要素が同じ重さに見える。Quiet Axis は Markdown のスキルとして、少数の硬いルール、デザイン契約、証拠ベースの合格条件を渡します。フレームワークにもベンダーにも縛られません。
 
 **コンテキストに常駐できるほど小さく**、**出力を変えられるほど具体的**にしています。
 
@@ -40,33 +42,33 @@
 フォルダをエージェントのスキルディレクトリに置くか、`SKILL.md` を読ませてください。
 
 ```bash
-git clone https://github.com/dream120526-create/northstar-ui.git
+git clone https://github.com/dream120526-create/quiet-axis.git
 ```
 
 主な配置先：
 
 | エージェント | パス |
 | --- | --- |
-| Claude Code | `~/.claude/skills/northstar-ui/` または `<project>/.claude/skills/northstar-ui/` |
-| Codex | `~/.agents/skills/northstar-ui/` または `<project>/.agents/skills/northstar-ui/` |
-| Gemini CLI / Antigravity | `~/.gemini/config/skills/northstar-ui/` |
-| Cursor | `<project>/.cursor/skills/northstar-ui/`、または `.cursor/rules` にポインタを追加 |
-| Windsurf | `<project>/.windsurf/skills/northstar-ui/` |
-| その他 | 任意の場所に置き、`AGENTS.md` に「UI 作業の前に `northstar-ui/SKILL.md` を読む」と 1 行追加 |
+| Claude Code | `~/.claude/skills/quiet-axis/` または `<project>/.claude/skills/quiet-axis/` |
+| Codex | `~/.agents/skills/quiet-axis/` または `<project>/.agents/skills/quiet-axis/` |
+| Gemini CLI / Antigravity | `~/.gemini/config/skills/quiet-axis/` |
+| Cursor | `<project>/.cursor/skills/quiet-axis/`、または `.cursor/rules` にポインタを追加 |
+| Windsurf | `<project>/.windsurf/skills/quiet-axis/` |
+| その他 | 任意の場所に置き、`AGENTS.md` に「UI 作業の前に `quiet-axis/SKILL.md` を読む」と 1 行追加 |
 
 ランタイム、MCP サーバー、ビルド手順は不要です。
 
 ## 使い方
 
 ```text
-northstar-ui/SKILL.md を読んで、請求設定ページを作って。
+quiet-axis/SKILL.md を読んで、請求設定ページを作って。
 まず DESIGN.md の草案を書き、7 ステップに従って。分類は飛ばさない。
 ```
 
 小さな変更：
 
 ```text
-northstar-ui を使って。主ボタンの色だけ変更し、トークンのコントラスト（P0 9）だけ確認して。
+quiet-axis を使って。主ボタンの色だけ変更し、トークンのコントラスト（P0 9）だけ確認して。
 ```
 
 変更ティアが定義されているので、コピー修正のたびに全面リデザインにはなりません。
@@ -82,7 +84,7 @@ northstar-ui を使って。主ボタンの色だけ変更し、トークンの�
 ## リポジトリ構成
 
 ```text
-northstar-ui/
+quiet-axis/
 ├── SKILL.md
 ├── DESIGN.md
 ├── CHEATSHEET.md
@@ -98,7 +100,7 @@ northstar-ui/
 
 ## ライセンスとクレジット
 
-**Northstar UI License 1.0（表示—非商用）。** 複製・改変・二次創作は可能です。二人の作者のクレジット（または原本リポジトリへのリンク）が必要で、販売や有料提供はできません。全文は [LICENSE](LICENSE)。
+**Quiet Axis License 1.0（表示—非商用）。** 複製・改変・二次創作は可能です。二人の作者のクレジット（または原本リポジトリへのリンク）が必要で、販売や有料提供はできません。全文は [LICENSE](LICENSE)。
 
 作者：[dream120526-create](https://github.com/dream120526-create) と [appledream120526-cloud](https://github.com/appledream120526-cloud)。
 

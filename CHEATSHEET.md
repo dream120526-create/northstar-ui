@@ -1,4 +1,4 @@
-# Northstar UI — cheat sheet
+# Quiet Axis — cheat sheet
 
 > Enough for 10 minutes. Details in `SKILL.md`; code in `topics/`.
 
