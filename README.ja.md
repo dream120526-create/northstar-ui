@@ -18,10 +18,12 @@
 
 | ファイル | 役割 |
 | --- | --- |
-| `SKILL.md` | 入口：変更ティア、7 ステップ、既定値、4 つのイージング、22 項目の P0 |
+| `SKILL.md` | 入口：変更ティア、7 ステップ、既定値、4 つのイージング + バネ分岐、25 項目の P0 |
 | `DESIGN.md` | 記入式のデザイン契約：製品事実、一文の北極星、画面ごとの主役、トークン、Do/Don't |
 | `CHEATSHEET.md` | 10 分で使える 1 ページ要約 |
 | `topics/motion.md` | 6 つのボタンインタラクション + 16 の UI エフェクト、実行可能なコードと SwiftUI/Compose 版 |
+| `topics/spring.md` | スプリング分岐：スワイプで閉じる、ラバーバンド、スナップ、スクワークル、Liquid Glass 方針 |
+| `topics/frameworks.md` | 実行可能なレシピ：CSS、Tailwind、Framer Motion、GSAP、Lottie、SwiftUI、Compose、Tauri/Electron |
 | `topics/patterns.md` | 10 のページパターン、データ密度の高いページ、10 類以外の導出方法 |
 | `topics/recipes.md` | トークン、シェル、ボタン、ダイアログ、Toast、スケルトン、一覧/設定/フォームの完全ページ |
 | `topics/reference.md` | 48 のアンチパターン、実測トークンコントラスト、タイポグラフィ、アクセシビリティ、レビュー形式 |

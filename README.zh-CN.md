@@ -18,10 +18,12 @@ Agent 生成的界面通常死在三处：内容没分类、页面没分区、�
 
 | 文件 | 作用 |
 | --- | --- |
-| `SKILL.md` | 入口：改动分级、七步流程、默认值、四条动效曲线、22 项 P0 |
+| `SKILL.md` | 入口：改动分级、七步流程、默认值、四条动效曲线 + 弹簧分支、25 项 P0 |
 | `DESIGN.md` | 可填写的设计契约：产品事实、一句话北极星、每屏主角、令牌、Do/Don't |
 | `CHEATSHEET.md` | 一页速查卡，10 分钟够用 |
 | `topics/motion.md` | 6 个按钮交互 + 16 个 UI 动效，含可运行代码与 SwiftUI/Compose 等价实现 |
+| `topics/spring.md` | 弹簧分支：滑关、橡皮筋、吸附、连续圆角、液态玻璃策略 |
+| `topics/frameworks.md` | 可直接运行：CSS、Tailwind、Framer Motion、GSAP、Lottie、SwiftUI、Compose、Tauri/Electron |
 | `topics/patterns.md` | 10 种页面形态、数据密集页，以及"第 11 种怎么推导" |
 | `topics/recipes.md` | 令牌、外壳、按钮、对话框、Toast、骨架屏、列表/设置/表单整页 |
 | `topics/reference.md` | 48 条反模式、实测令牌对比度、排版、无障碍、评审格式 |
@@ -96,6 +98,8 @@ quiet-axis/
 ├── README.es.md
 ├── topics/
 │   ├── motion.md
+│   ├── spring.md
+│   ├── frameworks.md
 │   ├── patterns.md
 │   ├── forms.md
 │   ├── states.md

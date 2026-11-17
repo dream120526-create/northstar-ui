@@ -106,6 +106,17 @@ html[data-theme="dark"] {
 - Press 80–120ms; micro 120–200ms; overlay 200–280ms; page 300–350ms.
 - Only `transform`/`opacity`; static equivalent under reduce-motion; every animation interruptible.
 - This product uses only these three motions: `<press feedback / list enter / success confirmation>`; nothing else.
+- Gesture surfaces (scroll, drag, swipe-to-dismiss) use spring dynamics (`topics/spring.md`); release velocity must be inherited.
+- Corners: `<circular | squircle>`; one family per product; circular emulation needs +1–2px optical compensation.
+
+## 8.1 Optional platform enhancements (record the answer)
+
+| Question | Answer |
+| --- | --- |
+| Liquid Glass on nav / toolbar / floating controls? | `<yes / match system / skip>` |
+| Squircle corners instead of circular? | `<yes for cards/sheets / circular>` |
+| Native spring scroll on lists and sheets? | `<native / solver / none>` |
+| Target shells | `<HTML / IPA / APK / EXE / multiple>` |
 
 ## 9. Do / Don't (anti-slop)
 

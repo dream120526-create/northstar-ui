@@ -18,10 +18,12 @@ It is deliberately **small enough to keep in context** and **specific enough to 
 
 | File | Purpose |
 | --- | --- |
-| `SKILL.md` | The entry point: change tiers, seven steps, defaults, four motion curves, 22 P0 gates |
+| `SKILL.md` | The entry point: change tiers, seven steps, defaults, four motion curves + spring branch, 25 P0 gates |
 | `DESIGN.md` | A fill-in design contract: product facts, one-sentence north star, hero per screen, tokens, do/don't |
 | `CHEATSHEET.md` | A one-page card for 10-minute work |
 | `topics/motion.md` | 6 button interactions + 16 UI effects, with runnable code and SwiftUI/Compose equivalents |
+| `topics/spring.md` | Spring branch: swipe-to-dismiss, rubber band, snap, squircle corners, Liquid Glass policy |
+| `topics/frameworks.md` | Runnable recipes: CSS, Tailwind, Framer Motion, GSAP, Lottie, SwiftUI, Compose, Tauri/Electron |
 | `topics/patterns.md` | 10 page patterns, data-dense pages, and a method for deriving patterns outside the 10 |
 | `topics/recipes.md` | Tokens, shell, buttons, dialog, toast, skeleton, full list/settings/form pages |
 | `topics/reference.md` | 48 anti-patterns, measured token contrast, typography, accessibility, review format |
@@ -96,6 +98,8 @@ quiet-axis/
 ├── README.es.md
 ├── topics/
 │   ├── motion.md
+│   ├── spring.md
+│   ├── frameworks.md
 │   ├── patterns.md
 │   ├── forms.md
 │   ├── states.md

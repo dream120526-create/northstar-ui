@@ -249,6 +249,24 @@ Specific things to keep—write them clearly so the next round doesn't remove th
 
 Severity: **Critical** = accessibility/unusable/convention break; **High** = obvious friction, low contrast, platform mismatch, template feel; **Medium** = suboptimal pattern, inconsistency; **Low** = polish. Write "Critical issues" only when Critical exists; "Excellent" only when there is no Critical and few Highs.
 
+### 9.1 Motion evidence (not checkboxes)
+
+| Item | Evidence | Not evidence |
+| --- | --- | --- |
+| Duration/easing | Screen recording or DevTools trace of the real transition | Reading the CSS and saying "looks fine" |
+| Frame budget | `PerformanceObserver('longtask')` shows no task > 50ms during the interaction, on 4× CPU throttle | Desktop Chrome at idle |
+| Spring velocity | Log velocity at pointerup; it must be non-zero and fed into the animation | Visually guessing "it bounces" |
+| Interruption | Grab the element mid-animation; no jump or restart | Testing only a full run |
+| Reduced motion | Toggle the OS setting on a real device and walk the primary flow | DevTools emulation only |
+| Squircle / glass | Screenshot with the fallback forced (no `corner-shape`, no glass) | Testing only the happy path |
+
+### 9.2 Self-contradictions to avoid
+
+- "Never use `linear` for spatial motion" is about *position* changes; `linear` on a progress fill is correct. Always state the scope.
+- Anticipation on a button reads as a bug; anticipation belongs to characterful, low-frequency moments.
+- "Always three motion layers" is over-specification. Cap at one ambient + one interaction layer, and allow zero.
+- Page transitions above 400ms feel broken; 300–350ms is the ceiling for full-screen change.
+
 ## 10. Delivery Self-Check (Print Version)
 
 - [ ] Content has a unique home, grouped 3–7, group names are nouns

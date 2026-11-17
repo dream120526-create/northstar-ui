@@ -514,6 +514,7 @@ label.setting-row { cursor: pointer; }
 }
 ```
 
+
 ## 12. Recipe Application Order
 
 1. Apply tokens and shell first; confirm 390 / 768 / 1440 all hold.
@@ -521,3 +522,50 @@ label.setting-row { cursor: pointer; }
 3. Add the four states (default/empty/loading/error).
 4. Finally add speed: press 80ms, enter ease-out, exit ease-in, movement ease-in-out.
 5. Run the P0 checklist and the `motion.md` §7 motion self-check.
+
+## 13. Squircle (continuous corner) generator
+
+Circular `border-radius` joins a quarter-circle to a straight edge, so curvature jumps. A squircle uses a superellipse `|x/a|^n + |y/b|^n = 1` (n ≈ 4–5), keeping curvature continuous.
+
+```css
+/* Native path first */
+.squircle { border-radius: 24px; corner-shape: squircle; }
+
+/* Fallback: clip-path with a generated superellipse (degrades to rounded rect) */
+@supports not (corner-shape: squircle) {
+  .squircle {
+    border-radius: 0;
+    clip-path: path("M 24 0 H 176 A 24 24 0 0 1 200 24 V 176 A 24 24 0 0 1 176 200 H 24 A 24 24 0 0 1 0 176 V 24 A 24 24 0 0 1 24 0 Z");
+  }
+}
+```
+
+Generate a real squircle path at build time (Node or a script step), not per render:
+
+```js
+// superellipse path for a w×h box with corner radius r, exponent n
+export function squirclePath(w, h, r, n = 4.5, steps = 24) {
+  const pts = [];
+  const c = Math.pow(2, 1 / n);
+  for (let i = 0; i <= steps; i++) {
+    const t = (i / steps) * (Math.PI / 2);
+    const cx = Math.cos(t) ** (2 / n), cy = Math.sin(t) ** (2 / n);
+    pts.push([r * (1 - cx) * c, r * (1 - cy) * c]); // top-left quadrant
+  }
+  // mirror the quadrant into the four corners, then join with straight edges
+  const TL = pts.map(([x, y]) => `${x.toFixed(2)} ${y.toFixed(2)}`).reverse();
+  const TR = pts.map(([x, y]) => `${(w - r + (r - x)).toFixed(2)} ${y.toFixed(2)}`);
+  const BR = pts.map(([x, y]) => `${(w - r + (r - x)).toFixed(2)} ${(h - r + (r - y)).toFixed(2)}`).reverse();
+  const BL = pts.map(([x, y]) => `${x.toFixed(2)} ${(h - r + (r - y)).toFixed(2)}`);
+  return `M ${TL.join(' L ')} L ${TR.join(' L ')} L ${BR.join(' L ')} L ${BL.join(' L ')} Z`;
+}
+```
+
+Usage: `clip-path: path("${squirclePath(200, 200, 24)}")`; for responsive sizes, prefer `corner-shape` or an SVG mask with `preserveAspectRatio="none"` so you do not recompute per breakpoint.
+
+Platform equivalents: iOS `RoundedRectangle(cornerRadius:style:.continuous)`; Android custom `Path` + `Shape` (or `RoundedCornerShape` on 12+); Windows `CompositionRoundedRectangleGeometry` with a custom path.
+
+Rules:
+- One corner family per product; do not mix circular and squircle on the same surface.
+- Optical compensation: +1–2px when emulating with circular radius.
+- Nested: inner = outer − padding, same family.

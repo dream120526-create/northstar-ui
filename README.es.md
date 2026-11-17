@@ -18,10 +18,12 @@ Es deliberadamente **pequeña para vivir en contexto** y **concreta para cambiar
 
 | Archivo | Propósito |
 | --- | --- |
-| `SKILL.md` | Entrada: niveles de cambio, siete pasos, valores por defecto, cuatro curvas, 22 puertas P0 |
+| `SKILL.md` | Entrada: niveles de cambio, siete pasos, valores por defecto, cuatro curvas + rama de resortes, 25 puertas P0 |
 | `DESIGN.md` | Contrato de diseño para completar: hechos del producto, estrella polar en una frase, héroe por pantalla, tokens, do/don't |
 | `CHEATSHEET.md` | Tarjeta de una página para trabajar en 10 minutos |
 | `topics/motion.md` | 6 interacciones de botón + 16 efectos UI, con código ejecutable y equivalentes SwiftUI/Compose |
+| `topics/spring.md` | Rama de resortes: deslizar para cerrar, goma elástica, snap, esquinas squircle, política de Liquid Glass |
+| `topics/frameworks.md` | Recetas ejecutables: CSS, Tailwind, Framer Motion, GSAP, Lottie, SwiftUI, Compose, Tauri/Electron |
 | `topics/patterns.md` | 10 patrones de página, páginas densas en datos y cómo derivar el patrón 11 |
 | `topics/recipes.md` | Tokens, shell, botones, diálogo, toast, skeleton, páginas completas de lista/ajustes/formulario |
 | `topics/reference.md` | 48 anti-patrones, contraste medido de tokens, tipografía, accesibilidad, formato de revisión |

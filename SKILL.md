@@ -45,6 +45,19 @@ description: Design and build interfaces that are logical, calm, and polished ac
 
 **Step 3 exit (one line):** if the product is not one of the 10 patterns, stop and go to §5—ask 2–3 shaping questions, then derive the structure; never force the nearest skeleton.
 
+### 0.2.1 Optional enhancements: ask, do not assume
+
+Some platform features change layout or contrast. Ask once, with a short default, and record the answer in `DESIGN.md`:
+
+| Question | Ask when | Default |
+| --- | --- | --- |
+| "Add Liquid Glass on nav/toolbar/floating controls? (yes / match system / skip)" | iOS 26+/macOS Tahoe target | match system, with an opaque fallback |
+| "Use squircle (continuous) corners instead of circular radius?" | Any Apple-style product and any card-heavy UI | yes for cards/sheets, circular for pills |
+| "Native spring scroll on lists, or plain scroll?" | Long lists, sheets, swipe-to-dismiss | native spring on iOS, `overscroll` on others |
+| "Ship which shell(s): HTML / IPA / APK / EXE?" | Before visual work | infer from context; ask if it changes layout |
+
+Never say "added Apple-style motion" without one of: a native API map, a velocity-carrying solver, or an explicit degraded-mode note.
+
 > Full walkthrough (dashboard from inventory to wireframe) in `topics/patterns.md` §12. Workflow rationale in `references/agent-ui-skills.md` §13.
 
 ### 0.3 Defaults (use these when unsure)
@@ -175,6 +188,7 @@ One test: **remove the animation—does the user understand the state change les
 | Enter (appear, expand, overlay) | ease-out `0,0,.2,1` | 180–260ms |
 | In-page A→B (shared element, slider) | ease-in-out `.4,0,.2,1` | 220–320ms |
 | Feedback spring (like, badge) | `.34,1.56,.64,1` | 300–450ms |
+| Gesture surfaces (drag, swipe, overscroll) | spring dynamics, not a curve | settles in 380–450ms |
 
 Three principles:
 
@@ -182,10 +196,25 @@ Three principles:
 2. **Use compositor-friendly properties**: only `transform` / `opacity`; progress via `scaleX`; layout changes via FLIP; DOM particles ≤80 (mobile ≤40); scroll via IntersectionObserver.
 3. **Respect system settings**: static equivalent under `prefers-reduced-motion`; iOS `isReduceMotionEnabled`; Android switch instantly when animation scale is 0; haptics only for success/confirmation.
 
+**Scope of each rule (avoid the usual contradiction)**
+
+| Situation | Use | Never |
+| --- | --- | --- |
+| Spatial motion (slide, expand, shared element) | time-based curve from the table above | bezier pretending to be a spring, with no velocity |
+| Constant-speed or looping motion (progress, marquee, spin) | `linear` | ease-in-out on a loop (it stutters at the seam) |
+| Press feedback | 80–120ms, `ease-out`, scale ≥0.97 | anticipation/reverse-then-forward on a button (feels broken, not intentional) |
+| Gesture-driven surfaces (scroll, drag, swipe-to-dismiss, rubber band) | **spring dynamics** (`topics/spring.md`) | fixed-ms fake spring, dropping release velocity |
+| Decorative confirmation (like, badge) | one spring bounce | springs on layout, lists, or page transitions |
+
+Anticipation is allowed only for **characterful, low-frequency** moments (e.g. a mascot, an empty-state illustration), never for primary buttons or navigation.
+
+**Motion layers are not mandatory.** A page may have zero ambient motion. The rule is: at most one ambient layer, at most one interaction layer, and the primary action gets feedback only—not a permanent loop.
+
 Six button recipes: hold-to-confirm, like burst, slide-to-confirm, fly-to-cart, theme circular reveal, copy feedback.
 Sixteen UI effects: spotlight, magnetic button, hover lift, spring, shine sweep, scroll reveal, parallax, scroll narrative, count-up, text decode, typewriter, marquee, 3D tilt, stagger, edge sheen, easing comparison.
+Spring branch (`topics/spring.md`): swipe-to-dismiss, rubber-band overscroll, spring snap, velocity inheritance, squircle corners, native parameter mapping, Liquid Glass policy.
 
-> All code, parameters, and SwiftUI/Compose equivalents: `topics/motion.md` (including §7 self-check).
+> All code, parameters, and SwiftUI/Compose equivalents: `topics/motion.md` (§7 self-check) and `topics/spring.md`.
 
 ---
 
@@ -245,13 +274,13 @@ One trigger question is worth more than 300 lines of presets.
 
 ---
 
-## 6. P0 checklist (choose by change tier)
+## 6. P0 checklist (25 items, choose by change tier)
 
 | Change | Required |
 | --- | --- |
 | Small edit (copy/color/spacing) | 9 (contrast), 14 (tokens) |
-| New page | 3, 5, 6, 7, 11, 22 |
-| New product / redesign | All 22 |
+| New page | 3, 5, 6, 7, 11, 22 (+23–25 if it has gestures or motion) |
+| New product / redesign | All 25 |
 
 | # | Check |
 | --- | --- |
@@ -277,6 +306,9 @@ One trigger question is worth more than 300 lines of presets.
 | 20 | DESIGN.md matches the code |
 | 21 | Slop audit Critical/High cleared |
 | 22 | Real screenshots (390/768/1440) + hex contrast values |
+| 23 | Gesture motion inherits release velocity; interruptible mid-flight |
+| 24 | Frame budget measured (no long task > 50ms on the motion you shipped) |
+| 25 | reduced-motion verified on a real device, not only in DevTools emulation |
 
 **No evidence, no pass**: no screenshots, no computed values, no keyboard run = not accepted. If you cannot verify something, mark it as a **limitation**; do not disguise it as a pass.
 
@@ -308,6 +340,8 @@ Review report format, severity levels, and the evidence table: `topics/reference
 | [`CHEATSHEET.md`](CHEATSHEET.md) | One-page card: tiers, defaults, four curves, P0, token contrast, delivery |
 | [`DESIGN.md`](DESIGN.md) | Design contract: facts, north star, hero, tokens, do/don't, quality gates |
 | [`topics/motion.md`](topics/motion.md) | Motion tokens, 6 button interactions, 16 effects, reduced-motion, platform equivalents |
+| [`topics/spring.md`](topics/spring.md) | Spring branch: swipe-to-dismiss, rubber band, snap, squircle, Liquid Glass policy, native mapping |
+| [`topics/frameworks.md`](topics/frameworks.md) | Runnable recipes for CSS, Tailwind, Framer Motion, GSAP, Lottie, SwiftUI, Compose, Tauri/Electron |
 | [`topics/patterns.md`](topics/patterns.md) | 10 pattern wireframes, data-dense pages, full derivation example |
 | [`topics/forms.md`](topics/forms.md) | Fields, labels, validation, special controls, auth |
 | [`topics/states.md`](topics/states.md) | Seven states, empty/loading/error/offline, feedback choice, optimistic updates |

@@ -151,7 +151,7 @@
 | Common Agent UI skill | Common gap | How this project handles it |
 | --- | --- | --- |
 | Style/palette retrieval | Gives style only, no page structure | §1–2 start with MECE classification and five regions |
-| Component generation | Components look fine, but states and accessibility are missing | Four states/seven states + 22 P0 items |
+| Component generation | Components look fine, but states and accessibility are missing | Four states/seven states + 25 P0 items |
 | Visual review | Only looks at the default state in a screenshot | 390/768/1440 + empty/loading/error + real hex contrast |
 | Motion | Only "fade/slide" or a pile of parameters | Four motions mapped to four curves + duration tokens + 6 button recipes + 16 effects |
 | Platform adaptation | Web only | iOS/Android/Web conventions and equivalent APIs |
