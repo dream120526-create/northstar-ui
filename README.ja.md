@@ -102,7 +102,7 @@ quiet-axis/
 
 ## ライセンスとクレジット
 
-**Quiet Axis License 1.0（表示—非商用）。** 複製・改変・二次創作は可能です。二人の作者のクレジット（または原本リポジトリへのリンク）が必要で、販売や有料提供はできません。全文は [LICENSE](LICENSE)。
+**MIT ライセンス。** 複製・改変・再配布・商用利用（有料製品への組み込みを含む）が可能です。著作権表示を残せば二人の作者のクレジットを満たします。全文は [LICENSE](LICENSE)。
 
 作者：[dream120526-create](https://github.com/dream120526-create) と [appledream120526-cloud](https://github.com/appledream120526-cloud)。
 

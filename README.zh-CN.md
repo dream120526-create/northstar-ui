@@ -114,7 +114,7 @@ quiet-axis/
 
 ## 许可证与署名
 
-**Quiet Axis License 1.0（署名—非商用）。** 可以复制、修改、二创；必须标注两位作者（或给出原仓库链接），不能售卖或收费提供。完整条款见 [LICENSE](LICENSE)。
+**MIT 许可证。** 可以复制、修改、再分发，也可以商用（包括放进付费产品）；保留版权声明即自动满足双作者署名。完整条款见 [LICENSE](LICENSE)。
 
 作者：[dream120526-create](https://github.com/dream120526-create) 与 [appledream120526-cloud](https://github.com/appledream120526-cloud)。
 

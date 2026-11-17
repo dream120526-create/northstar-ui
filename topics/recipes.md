@@ -53,6 +53,13 @@ html[data-theme="dark"] {
 }
 ```
 
+```js
+// P0 14 sample: explicit choice wins, otherwise follow the system.
+const saved = localStorage.getItem('theme');           // "light" | "dark" | null
+const dark = saved ? saved === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+// On toggle: localStorage.setItem('theme', next) before setting dataset.theme.
+```
 Selected state uses `--accent-soft-text`; don't put `--accent` on `--accent-soft` (only 2.92:1 in dark). For contrast values see `reference.md` §3.1.
 
 ```css
@@ -317,6 +324,9 @@ val alpha by animateFloatAsState(
 .badge--progress { background: var(--accent-soft); color: var(--accent-soft-text); }
 .icon-btn { width: 40px; height: 40px; border: 0; border-radius: 8px;
   background: transparent; color: var(--text-2); cursor: pointer; }
+.icon-btn { position: relative; }
+/* Visual 40px; the hit area is expanded to 44 with ::after, not by growing the button. */
+.icon-btn::after { content: ""; position: absolute; inset: -2px; }
 .icon-btn:hover { background: var(--surface-2); }
 
 .pager { display: flex; align-items: center; justify-content: space-between;

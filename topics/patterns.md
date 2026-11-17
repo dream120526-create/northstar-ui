@@ -139,6 +139,7 @@ Then fill the five zones: whose navigation, what the page header says, what the 
 - **Task type** (download / import / batch): every task has queued/running/failed/done; can pause, retry, and see why it failed; one progress unit throughout; concurrency is capped.
 - **Transaction type** (checkout / transfer / trade): amount, currency, and fees match on every page; submission is idempotent; irreversible actions confirm the object + amount; success returns a receipt number.
 - **Both**: state recovers after refresh/re-entry; never fake progress; failures never lose user input.
+- **Content-flow type** (feed / messages / comments): scroll position survives back-navigation; new items never jump the list under the reader; pagination failure shows a retry row, not an empty list.
 
 ## 12. Two Before / After examples
 

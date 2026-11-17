@@ -102,7 +102,7 @@ quiet-axis/
 
 ## Licencia y atribución
 
-**Quiet Axis License 1.0 (Atribución–NoComercial).** Puedes copiar, modificar y crear derivados. Debes acreditar a ambos autores (o enlazar a un repositorio original) y no puedes venderlo ni cobrar por acceso. Términos completos en [LICENSE](LICENSE).
+**Licencia MIT.** Puedes copiar, modificar, redistribuir y usar comercialmente, incluso dentro de productos de pago; conserva el aviso de copyright para mantener la atribución de ambos autores. Términos completos en [LICENSE](LICENSE).
 
 Creado por [@dream120526-create](https://github.com/dream120526-create) y [@appledream120526-cloud](https://github.com/appledream120526-cloud).
 

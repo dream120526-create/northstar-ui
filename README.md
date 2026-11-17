@@ -29,7 +29,10 @@ It is deliberately **small enough to keep in context** and **specific enough to 
 | `topics/reference.md` | 48 anti-patterns, measured token contrast, typography, accessibility, review format |
 | `topics/i18n.md` | Mixed CJK/Latin, punctuation, numbers, RTL, font stacks |
 | `topics/delivery.md` | HTML / IPA / APK / EXE builds, signing, real-device acceptance |
+| `topics/forms.md` / `topics/states.md` / `topics/platforms.md` | Forms, four/five states, iOS/Android/desktop conventions |
 | `references/agent-ui-skills.md` | Methodology comparison of 14 agent UI skills |
+| `AGENTS.md` | Pointer file for agents that read `AGENTS.md`: "for UI work, read `SKILL.md` first" |
+| `README.md` / `README.zh-CN.md` / `README.ja.md` / `README.es.md` | Same README in English, Simplified Chinese, Japanese, Spanish |
 
 Highlights:
 
@@ -90,6 +93,7 @@ quiet-axis/
 ├── SKILL.md
 ├── DESIGN.md
 ├── CHEATSHEET.md
+├── AGENTS.md
 ├── LICENSE
 ├── NOTICE
 ├── README.md
@@ -114,7 +118,7 @@ quiet-axis/
 
 ## License and attribution
 
-**Quiet Axis License 1.0 (Attribution–NonCommercial).** You may copy, modify, and build on it. You must credit both authors (or link to an original repository), and you may not sell it or charge for access. See [LICENSE](LICENSE) for the full terms.
+**MIT License.** Copy, modify, redistribute, and use it commercially, including inside paid products; keep the copyright notice so both authors stay credited. See [LICENSE](LICENSE).
 
 Created by [@dream120526-create](https://github.com/dream120526-create) and [@appledream120526-cloud](https://github.com/appledream120526-cloud).
 

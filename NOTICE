@@ -7,7 +7,9 @@ Neither repository is a fork or a copy of the other: the two are mirrored copies
 - https://github.com/dream120526-create/quiet-axis
 - https://github.com/appledream120526-cloud/quiet-axis
 
-Licensed under the **Quiet Axis License 1.0 (Attribution–NonCommercial)**. See `LICENSE`.
+Licensed under the **MIT License**. See `LICENSE`.
+
+Attribution requirement (MIT §1): copies and substantial portions must keep the copyright notice above, so both authors are credited. Redistributions should also keep this `NOTICE`.
 
 ## Third-party methodology references
 
@@ -36,5 +38,5 @@ If you redistribute this work or a derivative:
 
 1. Keep `LICENSE` and this `NOTICE`.
 2. Credit both authors, or link to one of the original repositories.
-3. Do not sell or charge for access to the work.
+3. Commercial use and resale are permitted under MIT; commercial users are asked (not required) to credit both authors.
 4. Verify the current license and path of any third-party repository you reference.

@@ -1,44 +1,22 @@
-# Quiet Axis License 1.0
-## Attribution–NonCommercial
+MIT License
 
 Copyright (c) 2026 dream120526-create and appledream120526-cloud
 Joint authors. Both must be credited; neither is a fork of the other.
 
-You may use, copy, modify, merge, publish, distribute, sublicense, and build upon this work (the "Work"), including for commercial evaluation and internal business use, provided that you comply with all of the following:
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-### 1. Attribution
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Any public copy, fork, redistribution, or derivative of the Work must give clear credit to **both authors**, using at least one of:
-
-- their GitHub handles: **@dream120526-create** and **@appledream120526-cloud**;
-- their names, as stated by the authors; or
-- a link to the original repository:
-  - https://github.com/dream120526-create/quiet-axis
-  - https://github.com/appledream120526-cloud/quiet-axis
-
-You must also indicate if you changed the Work, and retain this license and the `NOTICE` file in all copies.
-
-### 2. NonCommercial
-
-You may not sell, rent, license, or charge for access to the Work or any derivative, and you may not include the Work in a paid product, paid course, paid template, or paid service without prior written permission from both authors.
-
-Internal use inside a for-profit organization is allowed. Building a product with the Work is allowed. Selling the Work itself, or a derivative whose primary value is the Work, is not.
-
-### 3. Derivatives
-
-Derivatives are allowed. If you distribute a derivative, it must carry this same license (or a stricter license that preserves attribution and noncommercial use), and must not imply endorsement by the authors.
-
-### 4. Patents and third-party material
-
-No patent license is granted. Third-party names, methods, and assets referenced in `NOTICE` remain the property of their respective owners. This license does not grant rights to third-party trademarks or copyrighted assets.
-
-### 5. No warranty
-
-THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF THE WORK.
-
-### 6. Relationship to Creative Commons
-
-This license is inspired by Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0), with an explicit dual-author attribution requirement and a repository-link option. For the standard license text, see:
-https://creativecommons.org/licenses/by-nc/4.0/legalcode
-
-If you prefer to redistribute under CC BY-NC 4.0, you may do so, provided the attribution requirements above are also met.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
